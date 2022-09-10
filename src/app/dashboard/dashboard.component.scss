@@ -1,10 +1,34 @@
+@use '../../variables' as *;
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+$border-color: color($color: grays, $variant: 300);
+
+.calendar-wrapper {
+    max-width: 500px;
+    min-width: 200px;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    margin: 8px;
+}
+
+.igx-calendar{
+    border-radius: 4px;
+}
 * {
   font-family: "Open Sans", sans-serif;
 }
 a {
   text-decoration: none;
 }
+.main {
+  background-color: var(--light-backgroud);
+  height: 100vh;
+  .container {
+    padding: 15px 15px;
+    border-radius: 15px;
+    background-color: #fff;
+  }
+}
+
 .navbar ul {
   list-style: none;
   padding: 0;
@@ -35,3 +59,101 @@ a {
     }
   }
 }
+.showdatastu {
+  display: flex;
+  justify-content: space-between;
+  .sudshow {
+    background-color: #fff1df;
+    padding: 15px 15px;
+    border-radius: 10px;
+    min-width: 200px;
+    h2 {
+      color: #fff;
+      text-align: center;
+      border-radius: 10px;
+      padding: 10px 15px;
+      background-color: #ffab53;
+    }
+    p {
+      font-weight: 500;
+    }
+    button {
+      float: right;
+      background: #ffab53;
+      border: none;
+      border-radius: 5px;
+      i {
+        color: #fff;
+        font-size: 25px;
+      }
+    }
+  }
+}
+.pastse {
+  background-color: #f0dcff !important;
+  h2,
+  button {
+    background-color: #9a45da !important;
+  }
+}
+.assignedse {
+  background-color: #e5f1ff !important;
+  h2,
+  button {
+    background-color: #5e8de7 !important;
+  }
+}
+.upcomingmaindiv {
+  h2 {
+    color: var(--text-color);
+  }
+  .streamingdiv {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 15px 15px;
+    h3 {
+      color: var(--text-color);
+      font-size: 20px;
+    }
+    p {
+      color: #e0dedf;
+    }
+  }
+}
+.profliediv {
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: black;
+    padding: 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+  }
+}
+.profilemaindiv{
+  text-align: center;
+  text-align: -webkit-center;
+.profilimg{
+  width: 80px;
+  background-color: var(--light-backgroud);
+  border-radius: 50%;
+  overflow: hidden;
+  img{
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+.teachername{
+  h4{
+    line-height: 2;
+    margin: 0 0 2px ;
+    i{
+      color: var(--dark-color);
+    }
+  }
+  p{
+    color: #b6b4b6;
+    line-height: 0;
+  }
+}
+}
+

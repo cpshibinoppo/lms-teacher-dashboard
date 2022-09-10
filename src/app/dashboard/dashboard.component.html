@@ -1,29 +1,76 @@
-<div class="main">
-  <div class="container pt-3">
+<div class="main ">
+  <div class="container pt-3 ">
     <div class="row">
-        <div class="col-2 ">
-            <div class="firstsection">
-                <div class="logodiv">
-                    <h2>LMS</h2>
-                </div>
-                <nav>
-                  <div class="navbar">
-                    <ul>
-                      <li class="active"><a href="#"><img src="../../assets/img/home.png" alt="dashboard"><span>Dashboard</span></a></li>
-                      <li><a href="#"><img src="../../assets/img/laptop.png" alt="sessions"> <span> My Sessions</span></a></li>
-                      <li><a href="#"><img src="../../assets/img/school-bag.png" alt="school-bag"> <span>My Batches</span> </a></li>
-                      <li><a href="#"><img src="../../assets/img/right-arrow.png" alt="leave"> <span>My Leaves</span> </a></li>
-                    </ul>
-                  </div>
-                </nav>
+      <div class="col-2 ">
+        <div class="firstsection">
+          <div class="logodiv">
+            <h3>LMS</h3>
+          </div>
+          <nav>
+            <div class="navbar">
+              <ul>
+                <li class="active"><a href="#"><img src="../../assets/img/home.png"
+                      alt="dashboard"><span>Dashboard</span></a></li>
+                <li><a href="#"><img src="../../assets/img/laptop.png" alt="sessions"> <span> My Sessions</span></a>
+                </li>
+                <li><a href="#"><img src="../../assets/img/school-bag.png" alt="school-bag"> <span>My Batches</span>
+                  </a></li>
+                <li><a href="#"><img src="../../assets/img/right-arrow.png" alt="leave"> <span>My Leaves</span> </a>
+                </li>
+              </ul>
             </div>
+          </nav>
         </div>
-        <div class="col-6">
-          <h1>Dashbord</h1>
+      </div>
+      <div class="col-6">
+        <h4>Dashbord</h4>
+        <div class="showdatastu pt-4">
+          <div class="sudshow">
+            <h2>1</h2>
+            <p>Upcoming Sessions</p>
+            <button><i class='bx bx-chevron-right'></i></button>
+          </div>
+          <div class="sudshow pastse">
+            <h2>0</h2>
+            <p>Past Sessions</p>
+            <button><i class='bx bx-chevron-right'></i></button>
+          </div>
+          <div class="sudshow assignedse">
+            <h2>1</h2>
+            <p>Assigned Batches</p>
+            <button><i class='bx bx-chevron-right'></i></button>
+          </div>
         </div>
-        <div class="col-4">
-          <h1>user</h1>
+        <div class="upcomingmaindiv pt-5">
+          <h2>Upcoming Sessions</h2>
+          <div class="streamingdiv mt-4 pt-4">
+            <h3><i class='bx bx-calendar'></i>STREAMING TODAY</h3>
+            <p>No Sessions found.</p>
+          </div>
+          <div class="streamingdiv mt-4 pt-4">
+            <h3><i class='bx bx-calendar-edit'></i>STREAMING THIS MONTH</h3>
+            <p>No Sessions</p>
+          </div>
         </div>
+      </div>
+      <div class="col-4">
+        <div class="profliediv">
+          <h4>Profile</h4>
+          <a href=""><i class='bx bx-edit-alt'></i></a>
+        </div>
+        <div class="profilemaindiv">
+          <div class="profilimg">
+            <img src="../../assets/img/teacherimg/Employee-removebg-preview.png" alt="profile">
+          </div>
+          <div class="teachername">
+            <h4>Abdula<i class='bx bxs-check-circle' ></i></h4>
+            <p>PHP Developer</p>
+          </div>
+          <div class="calemaindiv">
+            <app-calendar></app-calendar>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 </div>

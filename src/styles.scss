@@ -1,8 +1,70 @@
+@use 'igniteui-angular/theming' as *;
+@use 'variables' as *;
+@use 'app-layout';
 @import "~bootstrap/scss/bootstrap.scss";
-/* You can add global styles to this file, and also import other style files */
+@import "~boxicons/css/boxicons.css";
+
+@include core();
+@include typography();
+@include theme(
+    $palette: $palette,
+    $schema: $schema
+);
+
 :root{
   --dark-color:#8a70d6;
   --light-backgroud:#e9e3ff;
   --text-color:#424040;
   --main-backgroud:#fbfbfb;
+  @include palette-vars($palette);
  }
+ html,
+ body {
+     height: 100%;
+     overflow: hidden;
+     margin: 0;
+ }
+
+
+
+
+ .light-theme {
+     @include light-theme($palette);
+ }
+
+ .dark-theme {
+     background: #333;
+     color: #fff;
+     @include dark-theme(
+         $palette: $green-palette
+     );
+
+     .grid-chart-contextmenu-wrapper {
+         @include fluent-dark-theme($fluent-excel-palette);
+     }
+ }
+
+ .fin-dark-theme {
+     @include dark-theme($green-palette);
+     background: #333;
+
+     ::-moz-placeholder {
+         opacity: 1;
+     }
+ }
+ .igx-calendar__date--selected.igx-calendar__date--current:hover .igx-calendar__date-content {
+  color: #fff !important;
+  background-color: var(--dark-color);
+ }
+ .igx-calendar__date--current:hover .igx-calendar__date-content{
+  color: #fff !important;
+  background: var(--dark-color) !important;
+ }
+ .igx-calendar__date--current .igx-calendar__date-content{
+  color: var(--dark-color);
+ }
+ .igx-calendar__date--selected.igx-calendar__date--current .igx-calendar__date-content {
+  color: #fff !important;
+  background-color: var(--dark-color);
+ }
+

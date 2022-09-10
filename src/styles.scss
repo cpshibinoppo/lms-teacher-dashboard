@@ -61,10 +61,22 @@
   background: var(--dark-color) !important;
  }
  .igx-calendar__date--current .igx-calendar__date-content{
-  color: var(--dark-color);
+  color: #fff !important;
+  background-color: var(--dark-color);
  }
  .igx-calendar__date--selected.igx-calendar__date--current .igx-calendar__date-content {
   color: #fff !important;
   background-color: var(--dark-color);
  }
+ .igx-calendar__date--selected:hover .igx-calendar__date-content{
+  color: #fff !important;
+  background-color: var(--light-backgroud);
+ }
 
+ .igx-calendar__date--selected .igx-calendar__date-content {
+  color: #fff !important;
+  background-color: var(--light-backgroud);
+ }
+ .calendar-wrapper[_ngcontent-oiw-c373] {
+  border: none !important;
+ }

@@ -22,6 +22,8 @@ a {
 .main {
   background-color: var(--light-backgroud);
   height: 100vh;
+  display: flex;
+  align-items: center;
   .container {
     padding: 15px 15px;
     border-radius: 15px;

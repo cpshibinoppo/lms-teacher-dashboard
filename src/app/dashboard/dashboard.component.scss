@@ -27,7 +27,7 @@ a {
   height: 100vh;
   display: flex;
   align-items: center;
-  overflow: auto;
+  overflow: auto !important ;
   .container {
     padding: 15px 15px;
     border-radius: 15px;
@@ -209,6 +209,9 @@ a {
   .subdash h4 {
     margin-left: 25px;
   }
+  .main{
+    display: block !important;
+  }
 }
 @media only screen and (min-width: 485px) {
   .phoneprofile {
@@ -240,6 +243,9 @@ a {
   }
   .subdash h4 {
     margin-left: 25px;
+  }
+  .main{
+    display: block !important;
   }
 }
 
@@ -273,6 +279,9 @@ a {
   }
   .subdash h4 {
     margin-left: 0;
+  }
+  .main{
+    display: flex !important;
   }
 }
 @media only screen and (min-width: 992px) {

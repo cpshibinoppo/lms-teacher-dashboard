@@ -1,17 +1,20 @@
-@use '../../variables' as *;
+@use "../../variables" as *;
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
-$border-color: color($color: grays, $variant: 300);
+$border-color: color(
+  $color: grays,
+  $variant: 300,
+);
 
 .calendar-wrapper {
-    max-width: 500px;
-    min-width: 200px;
-    border: 1px solid $border-color;
-    border-radius: 6px;
-    margin: 8px;
+  max-width: 500px;
+  min-width: 200px;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  margin: 8px;
 }
 
-.igx-calendar{
-    border-radius: 4px;
+.igx-calendar {
+  border-radius: 4px;
 }
 * {
   font-family: "Open Sans", sans-serif;
@@ -28,6 +31,7 @@ a {
     padding: 15px 15px;
     border-radius: 15px;
     background-color: #fff;
+    position: relative;
   }
 }
 
@@ -131,31 +135,180 @@ a {
     border-radius: 10px;
   }
 }
-.profilemaindiv{
+.profilemaindiv {
   text-align: center;
   text-align: -webkit-center;
-.profilimg{
-  width: 80px;
-  background-color: var(--light-backgroud);
-  border-radius: 50%;
-  overflow: hidden;
-  img{
-    margin-top: 5px;
-    width: 100%;
-  }
-}
-.teachername{
-  h4{
-    line-height: 2;
-    margin: 0 0 2px ;
-    i{
-      color: var(--dark-color);
+  .profilimg {
+    width: 80px;
+    background-color: var(--light-backgroud);
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      margin-top: 5px;
+      width: 100%;
     }
   }
-  p{
-    color: #b6b4b6;
-    line-height: 0;
+  .teachername {
+    h4 {
+      line-height: 2;
+      margin: 0 0 2px;
+      i {
+        color: var(--dark-color);
+      }
+    }
+    p {
+      color: #b6b4b6;
+      line-height: 0;
+    }
   }
 }
+.subdash {
+  display: flex;
+  justify-content: space-between;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .phoneprofile {
+    display: block;
+  }
+  .profilecol {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+  }
+  .navbar ul li a span {
+    visibility: hidden;
+  }
+  .navbar ul {
+    li {
+      padding: 0;
+      width: 35px;
+      height: 50px;
+      img {
+        margin-top: 9px;
+        margin-left: 3px;
+      }
+    }
+  }
+  .showdatastu {
+    text-align: -webkit-center;
+  }
+  .showdatastu .sudshow {
+    min-width: 150px !important;
+    max-width: 280px;
+    text-align: left;
+  }
+  .showdatastu {
+    display: block;
+    .sudshow button {
+      float: none;
+    }
+  }
+  .subdash h4 {
+    margin-left: 25px;
+  }
+}
+@media only screen and (min-width: 485px) {
+  .phoneprofile {
+    display: block;
+  }
+  .profilecol {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+  }
+  .navbar ul li a span {
+    visibility: hidden;
+  }
+  .navbar ul {
+    li {
+      padding: 0;
+      width: 35px;
+      height: 50px;
+      img {
+        margin-top: 9px;
+        margin-left: 3px;
+      }
+    }
+  }
+  .showdatastu .sudshow {
+    min-width: 150px !important;
+    max-width: 460px;
+  }
+  .subdash h4 {
+    margin-left: 25px;
+  }
 }
 
+@media only screen and (min-width: 768px) {
+  .phoneprofile {
+    display: block;
+  }
+  .profilecol {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+  }
+  .navbar ul li a span {
+    visibility: visible;
+  }
+  .navbar ul {
+    li {
+      padding: 10px 0px 10px 5px;
+      width: auto;
+      height: auto;
+      img {
+        margin-top: 0;
+        margin-left: 0;
+      }
+    }
+  }
+  .sudshow {
+    min-width: 170px !important;
+    max-width: none;
+  }
+  .subdash h4 {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .phoneprofile {
+    display: block;
+  }
+  .profilecol {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+  }
+  .navbar ul {
+    li {
+      padding: 10px 0px 10px 5px;
+    }
+  }
+  .sudshow {
+    min-width: 200px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .phoneprofile {
+    display: none;
+  }
+  .profilecol {
+    display: block !important;
+  }
+  .navbar ul li a span {
+    visibility: visible;
+  }
+  .navbar ul {
+    li {
+      padding: 10px 25px 10px 10px;
+    }
+  }
+  .sudshow {
+    min-width: 200px !important;
+  }
+}

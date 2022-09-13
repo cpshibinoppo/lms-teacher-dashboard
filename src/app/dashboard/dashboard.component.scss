@@ -27,6 +27,7 @@ a {
   height: 100vh;
   display: flex;
   align-items: center;
+  overflow: auto;
   .container {
     padding: 15px 15px;
     border-radius: 15px;
